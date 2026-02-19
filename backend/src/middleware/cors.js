@@ -18,8 +18,13 @@ import cors from "cors"
  * - Allows JSON content type headers
  */
 
+const allowedOrigins = [
+	"http://localhost:3000",
+	"https://project-tracker-vaishali.netlify.app",
+]
+
 const corsOptions = {
-	origin: "http://localhost:3000", // Allow requests from React dev server
+	origin: allowedOrigins, // Allow requests from React dev server
 	methods: ["GET", "POST", "PATCH", "DELETE"], // Allowed HTTP methods
 	allowedHeaders: ["Content-Type"], // Allowed headers in requests
 	credentials: true, // Allow cookies if needed later
