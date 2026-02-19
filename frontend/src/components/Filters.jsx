@@ -7,11 +7,11 @@ import { useEffect, useRef, useState } from 'react';
  */
 
 
-export default function Filters({ onFilterChange, projectCount }) {
-    const [status, setStatus] = useState('');
-    const [search, setSearch] = useState('');
+export default function Filters({ onFilterChange, projectCount, initialFilters }) {
+    const [status, setStatus] = useState(initialFilters?.status || '');
+    const [search, setSearch] = useState(initialFilters?.search || '');
     const [searchError, setSearchError] = useState('');
-    const [sortBy, setSortBy] = useState('createdAt');
+    const [sortBy, setSortBy] = useState(initialFilters?.sortBy || 'createdAt');
     const searchTimeoutRef = useRef(null);
     const errorTimeoutRef = useRef(null);
 

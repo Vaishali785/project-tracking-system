@@ -112,6 +112,7 @@ function App() {
                     <Filters
                         onFilterChange={updateFilters}
                         projectCount={loading || error ? null : projects.length}
+                        initialFilters={filters}
                     />
                 </div>
 
