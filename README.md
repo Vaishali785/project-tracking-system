@@ -6,6 +6,12 @@ A full-stack web application for managing and tracking projects with advanced fi
 
 ---
 
+## 🌐 Live Demo
+
+**Frontend:** https://project-tracker-vaishali.netlify.app/
+
+---
+
 ## 📋 Table of Contents
 
 - Features
